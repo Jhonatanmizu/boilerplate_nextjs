@@ -14,7 +14,7 @@
   "lint-staged": {
     "src/**/*": [
       "npm lint --fix",
-      "npm test --bail"
+      "npm test --findRelatedTests --bail"
     ]
   },
   "dependencies": {
