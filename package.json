@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings=0",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*": [
-      "npm lint --fix",
+      "eslint --fix",
       "npm test --findRelatedTests --bail"
     ]
   },
@@ -25,7 +25,8 @@
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.18.6",
@@ -34,6 +35,7 @@
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.4.0",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-standard-with-typescript": "^33.0.0",
@@ -47,6 +49,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "lint-staged": "^13.1.0",
     "prettier": "2.8.3",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "@types/styled-components": "^5.1.26"
   }
 }
