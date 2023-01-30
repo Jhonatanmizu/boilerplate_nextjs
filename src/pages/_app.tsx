@@ -10,8 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Nextjs - boilerplate</title>
-        {/* <link rel="shortcut icon" href="/" /> */}
-        {/* <link rel="apple-touch-icon" href="/" /> */}
 
         <link
           rel="apple-touch-icon"
@@ -34,6 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="A simple nextjs boilerplate by Mizugawa"
         />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
